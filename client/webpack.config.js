@@ -34,12 +34,9 @@ module.exports = () => {
       }),
 
       // Creates a manifest.json file.
-      new WebpackPwaManifest({
-        
+      new WebpackPwaManifest({        
         fingerprints: false,
         inject: true,
-
-
         name: 'text editor',
         short_name: 'text editor',
         description: 'Write out text in a formated display!',
@@ -56,7 +53,6 @@ module.exports = () => {
           },
         ],
       }),
-
     ],
 
     module: {
@@ -80,6 +76,5 @@ module.exports = () => {
         },
       ],
     },
-
   };
 };
